@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Letreiro Bem Vindos</title>
+
+<style>
+body {
+    background: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.marquee {
+    width: 90vw;
+    height: 260px;
+    overflow: hidden;
+    border: 3px solid #ddd;
+    background: #ffffff;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+.track img {
+    height: 220px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+@keyframes scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="marquee">
+    <div class="track">
+        <img src="B.png">
+        <img src="e.png">
+        <img src="M.png">
+
+        <div style="width:80px"></div>
+
+        <img src="V.png">
+        <img src="I.png">
+        <img src="N.png">
+        <img src="d.png">
+        <img src="o.png">
+        <img src="s.png">
+    </div>
+</div>
+
+</body>
+</html>
